@@ -1,0 +1,145 @@
+val version = "3.3"
+val boton = Button(context)
+boton.id = R.id.AOHH9803252Q5
+val serie = "AVM"
+val folio = "0000359"
+val fecha = "2019-09-12T08:09:24"
+val idFijo = R.id.AOHH9803252Q5
+val formaPago = "99"
+val subTotal = 12120.17
+val descuento = 2656.30
+val moneda = "MXN"
+val tipoCambio = 1
+val total = 9463.87
+val tipoDeComprobante = "N"
+val metodoPago = "PUE"
+val lugarExpedicion = "04200"
+
+data class Comprobante(
+    val version: String,
+    val serie: String,
+    val folio: String,
+    val fecha: String,
+    val formaPago: String,
+    val subTotal: Double,
+    val descuento: Double,
+    val moneda: String,
+    val tipoCambio: Int,
+    val total: Double,
+    val tipoDeComprobante: String,
+    val metodoPago: String,
+    val lugarExpedicion: String
+)
+
+val comprobante = Comprobante(
+    version = "3.3",
+    serie = "AVM",
+    folio = "0000359",
+    fecha = "2019-09-12T08:09:24",
+    formaPago = "99",
+    subTotal = 12120.17,
+    descuento = 2656.30,
+    moneda = "MXN",
+    tipoCambio = 1,
+    total = 9463.87,
+    tipoDeComprobante = "N",
+    metodoPago = "PUE",
+    lugarExpedicion = "04200"
+)
+¡Claro! Aquí te muestro una posible estructura para el objeto Comprobante en Kotlin:
+data class Comprobante(
+    val version: String,
+    val serie: String,
+    val folio: String,
+    val fecha: String,
+    val formaPago: String,
+    val subTotal: Double,
+    val descuento: Double,
+    val moneda: String,
+    val tipoCambio: Int,
+    val total: Double,
+    val tipoDeComprobante: String,
+    val metodoPago: String,
+    val lugarExpedicion: String,
+    val emisor: Emisor,
+    val receptor: Receptor,
+    val conceptos: List<Concepto>,
+    val timbreFiscalDigital: TimbreFiscalDigital
+)
+
+data class Emisor(
+    val rfc: String,
+    val nombre: String,
+    val regimenFiscal: String
+)
+
+data class Receptor(
+    val rfc: String,
+    val nombre: String,
+    val usoCFDI: String
+)
+
+data class Concepto(
+    val claveProdServ: String,
+    val cantidad: Int,
+    val claveUnidad: String,
+    val descripcion: String,
+    val valorUnitario: Double,
+    val importe: Double,
+    val descuento: Double
+)
+
+data class TimbreFiscalDigital(
+    val uuid: String,
+    val fechaTimbrado: String,
+    val rfcProvCertif: String,
+    val selloCFD: String,
+    val noCertificadoSAT: String,
+    val selloSAT: String
+)
+
+val comprobante = Comprobante(
+    version = "3.3",
+    serie = "AVM",
+    folio = "0000359",
+    fecha = "2019-09-12T08:09:24",
+    formaPago = "99",
+    subTotal = 12120.17,
+    descuento = 2656.30,
+    moneda = "MXN",
+    tipoCambio = 1,
+    total = 9463.87,
+    tipoDeComprobante = "N",
+    metodoPago = "PUE",
+    lugarExpedicion = "04200",
+    emisor = Emisor(
+        rfc = "GAV9708211W4",
+        nombre = "GNP ADMINISTRACION DE VENTA MASIVA, S.A. DE C.V.",
+        regimenFiscal = "601"
+    ),
+    receptor = Receptor(
+        rfc = "AOHH9803252Q5",
+        nombre = "HAROLD ALONSO HERNANDEZ",
+        usoCFDI = "P01"
+    ),
+    conceptos = listOf(
+        Concepto(
+            claveProdServ = "84111505",
+            cantidad = 1,
+            claveUnidad = "ACT",
+            descripcion = "Pago de nómina",
+            valorUnitario = 12120.17,
+            importe = 12120.17,
+            descuento = 2656.30
+        )
+    ),
+    timbreFiscalDigital = TimbreFiscalDigital(
+        uuid = "25D60C03-49F1-4D4A-9AE7-426B6D6CA1B1",
+        fechaTimbrado = "2019-09-12T08:53:52",
+        rfcProvCertif = "ASE0201179X0",
+        selloCFD = "BaMp1Io+Oh1D1w1m1FCrTOSVF1dC3cv2/0/6TwSf+eQfWlYYAuAyFhBbAc7I8qpyYr0a1rwlsy6KJJvO/crppNkE5rFULXePxNlMMcDvYzkxGjMZjHFs8/5rIw3PMkzXq/ThSx6gXm9SKgESuROeTOSsDDS1gkDWEtTYsU0EriDYIbPD40TTebWWoi6Z5uzv7vIJLD2dwNPPyLMSzxD+KCBY6Tik8YKf8VhPlomAJ0zAEuvhvIJlcnT6xLk7pJa5aan/Ap0FCus7T1ILk3KfFSTDk82MYOMb5O091y3DQBEBkVsEU7BNS1Nq1unyxvQuKe2WGUwvFi9ztAPW++mYMQ==",
+        noCertificadoSAT = "00001000000414715731",
+        selloSAT = "H5/8h47Vd9g9/XLybXii1gaGL2/aL2OZqCSJYYJv0whCtaYNuWuzRq0dlm7cmVmxrZIMW7/DWHRKogXdhDm4VsPtZ5JJrmGYNp6FLGRnrIMzNFudMttKwNNopxBCotfaFawnVIqeqYesGMYKDLj8Q+7CmdIodSRPG65OWu/ZRfbMO99xy76ziDnuhxlTqsSnKDNhIt9MS1U3ArIjW83qjGwv18UA721YRdHRMWwbA09Z3zls51Cz59owiH26j27jAGwAlRWouFLL0ut0rX/b9mJXGUIqE/WjPDf+N8ioBWMd/FSCHEzvYICBFjhNmaU2fB9Hi4QCr9lWn8W27BmAig=="
+    )
+)
+
