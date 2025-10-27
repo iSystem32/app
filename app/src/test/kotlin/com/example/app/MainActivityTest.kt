@@ -10,12 +10,12 @@ class MainActivityTest {
 
     @Test
     fun `isValidRfc should return true for a valid 12-character RFC`() {
-        assertTrue(mainActivity.isValidRfc("ABC123456XYZ"))
+        assertTrue(mainActivity.isValidRfc("AOHH9803252Q5"))
     }
 
     @Test
     fun `isValidRfc should return true for a valid 13-character RFC`() {
-        assertTrue(mainActivity.isValidRfc("ABCD123456XYZ"))
+        assertTrue(mainActivity.isValidRfc("AOHH9803252Q5"))
     }
 
     @Test
