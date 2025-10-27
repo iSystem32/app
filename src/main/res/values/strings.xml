@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Datos principales del comprobante -->
+    <string name="version">3.3</string>
+    <string name="serie">AVM</string>
+    <string name="folio">0000359</string>
+    <string name="fecha">2019-09-12T08:09:24</string>
+    <string name="forma_pago">99</string>
+    <string name="sub_total">12120.17</string>
+    <string name="descuento">2656.30</string>
+    <string name="moneda">MXN</string>
+    <string name="tipo_cambio">1</string>
+    <string name="total">9463.87</string>
+    <string name="tipo_comprobante">N</string>
+    <string name="metodo_pago">PUE</string>
+    <string name="lugar_expedicion">04200</string>
+
+    <!-- Emisor -->
+    <string name="emisor_rfc">GAV9708211W4</string>
+    <string name="emisor_nombre">GNP ADMINISTRACION DE VENTA MASIVA, S.A. DE C.V.</string>
+    <string name="emisor_regimen_fiscal">601</string>
+
+    <!-- Receptor -->
+    <string name="receptor_rfc">AOHH9803252Q5</string>
+    <string name="receptor_nombre">HAROLD ALONSO HERNANDEZ</string>
+    <string name="receptor_uso_cfdi">P01</string>
+
+    <!-- Concepto -->
+    <string name="concepto_clave_prod_serv">84111505</string>
+    <string name="concepto_cantidad">1</string>
+    <string name="concepto_clave_unidad">ACT</string>
+    <string name="concepto_descripcion">Pago de nómina</string>
+    <string name="concepto_valor_unitario">12120.17</string>
+    <string name="concepto_importe">12120.17</string>
+    <string name="concepto_descuento">2656.30</string>
+
+    <!-- Timbre Fiscal Digital -->
+    <string name="uuid">25D60C03-49F1-4D4A-9AE7-426B6D6CA1B1</string>
+    <string name="fecha_timbrado">2019-09-12T08:53:52</string>
+    <string name="rfc_prov_certif">ASE0201179X0</string>
+    <string name="sello_cfd">BaMp1Io+Oh1D1w1m1FCrTOSVF1dC3cv2/0/6TwSf+eQfWlYYAuAyFhBbAc7I8qpyYr0a1rwlsy6KJJvO/crppNkE5rFULXePxNlMMcDvYzkxGjMZjHFs8/5rIw3PMkzXq/ThSx6gXm9SKgESuROeTOSsDDS1gkDWEtTYsU0EriDYIbPD40TTebWWoi6Z5uzv7vIJLD2dwNPPyLMSzxD+KCBY6Tik8YKf8VhPlomAJ0zAEuvhvIJlcnT6xLk7pJa5aan/Ap0FCus7T1ILk3KfFSTDk82MYOMb5O091y3DQBEBkVsEU7BNS1Nq1unyxvQuKe2WGUwvFi9ztAPW++mYMQ==</string>
+    <string name="no_certificado_sat">00001000000414715731</string>
+    <string name="sello_sat">H5/8h47Vd9g9/XLybXii1gaGL2/aL2OZqCSJYYJv0whCtaYNuWuzRq0dlm7cmVmxrZIMW7/DWHRKogXdhDm4VsPtZ5JJrmGYNp6FLGRnrIMzNFudMttKwNNopxBCotfaFawnVIqeqYesGMYKDLj8Q+7CmdIodSRPG65OWu/ZRfbMO99xy76ziDnuhxlTqsSnKDNhIt9MS1U3ArIjW83qjGwv18UA721YRdHRMWwbA09Z3zls51Cz59owiH26j27jAGwAlRWouFLL0ut0rX/b9mJXGUIqE/WjPDf+N8ioBWMd/FSCHEzvYICBFjhNmaU2fB9Hi4QCr9lWn8W27BmAig==</string>
+</resources>
