@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="id" name="AOHH9803252Q5" id="0x7f0f0035" />
+    <public type="id" name="rfc_receptor" id="0x7f0f0035" />
+    <public type="id" name="total" id="0x7f0f0036" />
+    <public type="id" name="fecha" id="0x7f0f0037" />
+    <public type="id" name="folio" id="0x7f0f0038" />
+</resources>
