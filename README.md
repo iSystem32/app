@@ -1,2 +1,2 @@
-# 
+# 0xe60aec3afc215b72f9e239e447ee6b8f502d55171dfb21aa75bba0e114690bf2196d70484a3c4ccda984c7c766a950d7cd5f1a088c159ecb95f034408d9ff90a1c
 {"cplatform":"mobile","cff":"SMALL_FORM_FACTOR","c":"android","cplayer":"PLATYPUS","cmodel":"23026RN54G","cos":"Android","soc":"Mediatek:MT6765V\/XBA","cver":"20.40.41","cbrand":"Xiaomi","cbr":"nullcom.google.android.youtubenull","csdk":"33","cbrver":"20.40.41","cosver":"13.TP1A.220624.014.V14.0.39.0.TGOMIXM","videoid":"0Oz-WQi51aU","cpn":"ajHimOUs4CWcfOmf","fmt":"244 vp9 854x480@24","afmt":"251:CggKA2RyYxIBMQ opus","bh":84958,"conn":3,"volume":100,"loudness":"0.000","bat":"0.910:0","df":"0\/9496","time":"2025-11-11T05:03:12.655Z","glmode":"RECTANGULAR_2D","drm":"","mtext":"G","error":"No errors","logged_in":"0"}
